@@ -1,0 +1,172 @@
+/* Custom styles for portfolio */
+
+/* Social icons */
+.social-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.social-icon:hover,
+.social-icon:focus {
+  color: #007bff;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Profile photo */
+.profile-photo {
+  max-width: 300px;
+  width: 100%;
+  height: 300px;
+  border-radius: 15px; /* Slightly rounded corners for better shape */
+  margin-right: 1.5rem;
+  float: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover; /* Ensure image covers the container */
+}
+
+/* Personal branding colors and typography */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background-color: #f8f9fa;
+}
+
+/* Project card images */
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Animations and transitions */
+.fade-in {
+  animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button hover transition */
+.btn-primary {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #0056b3;
+  border-color: #004085;
+  outline: none;
+}
+
+/* Navbar transition */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #343a40 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ensure header text colors change in dark mode */
+body.dark-mode header h1.display-4,
+body.dark-mode header p.lead {
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+  background-color: #222 !important;
+  box-shadow: 0 2px 8px rgba(255,255,255,0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .card {
+  background-color: #2a2a2a !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #444 !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #8a56d9;
+  border-color: #8a56d9;
+  color: #fff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode .btn-primary:hover,
+body.dark-mode .btn-primary:focus {
+  background-color: #6f3ecb;
+  border-color: #6f3ecb;
+  color: #fff;
+}
+
+body.dark-mode footer {
+  background-color: #222;
+  color: #ccc;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  /* Remove fixed positioning for sticky footer layout */
+  position: static;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Use flexbox layout for sticky footer */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex-grow: 1;
+}
+
+main#main-content {
+  flex: 1 0 auto;
+  padding-bottom: 1rem;
+}
+
+body.dark-mode .form-control {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+body.dark-mode .form-control:focus {
+  background-color: #3a3a3a;
+  color: #fff;
+  border-color: #bb86fc;
+  box-shadow: 0 0 0 0.2rem rgba(187, 134, 252, 0.25);
+}

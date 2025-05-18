@@ -1,0 +1,18 @@
+/* Icon section styling */
+.icon-section {
+  background-color: #f8f9fa;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .icon-section {
+  background-color: #222;
+  color: #e0e0e0;
+}
+
+.icon-section svg {
+  width: 80px;
+  height: 80px;
+  fill: currentColor;
+  transition: fill 0.3s ease;
+}
